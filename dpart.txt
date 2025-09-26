@@ -1,0 +1,14 @@
+sel disk 0
+clean
+convert gpt
+
+cre par efi size=500
+sel par 1
+format fs=fat32 quick
+ass letter a
+
+cre par pri
+sel par 2
+format fs=ntfs quick
+ass letter c
+exit
